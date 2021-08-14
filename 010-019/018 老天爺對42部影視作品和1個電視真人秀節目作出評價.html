@@ -1,30 +1,37 @@
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 <article>
   <div class="navbar">
-    動畫影視作品
-    <ul>
-      <li><a href="#18-01">快樂酷寶</a></li>
-      <li><a href="#18-02">奧特曼</a></li>
-      <li><a href="#18-03">黑貓警長</a></li>
-      <li><a href="#18-04">貓和老鼠</a></li>
-      <li><a href="#18-05">米老鼠和唐老鴨</a></li>
-      <li><a href="#18-06">葫蘆娃</a></li>
-      <li><a href="#18-07">叮噹貓</a></li>
-      <li><a href="#18-08">白雪公主和七個小矮人</a></li>
-      <li><a href="#18-09">阿凡提的故事</a></li>
-      <li><a href="#18-10">聰明的一休</a></li>
-      <li><a href="#18-11">西遊記</a></li>
-      <li><a href="#18-12">花仙子</a></li>
-      <li><a href="#18-13">哪吒</a></li>
-      <li><a href="#18-14">寶蓮燈</a></li>
-      <li><a href="#18-15">變形金剛</a></li>
-      <li><a href="#18-16">名偵探柯南</a></li>
-      <li><a href="#18-17">大頭兒子和小頭爸爸</a></li>
-      <li><a href="#18-18">天線寶寶</a></li>
-      <li><a href="#18-19">巴拉巴拉小魔仙</a></li>
-      <li><a href="#18-20">熊出沒</a></li>
-      <li><a href="#18-21">獅子王</a></li>
-      <li><a href="#18-22">冰河世紀</a></li>
-    </ul>
+    <header>
+      <button id="menu-ctrl" onclick="collapsible()"><i class="fas fa-bars fa-times"></i></button>
+      <h2 class="navlist">目錄</h2>
+    </header>
+    <div class="navlist">
+      <ul>
+        <li><a href="#18-01">快樂酷寶</a></li>
+        <li><a href="#18-02">奧特曼</a></li>
+        <li><a href="#18-03">黑貓警長</a></li>
+        <li><a href="#18-04">貓和老鼠</a></li>
+        <li><a href="#18-05">米老鼠和唐老鴨</a></li>
+        <li><a href="#18-06">葫蘆娃</a></li>
+        <li><a href="#18-07">叮噹貓</a></li>
+        <li><a href="#18-08">白雪公主和七個小矮人</a></li>
+        <li><a href="#18-09">阿凡提的故事</a></li>
+        <li><a href="#18-10">聰明的一休</a></li>
+        <li><a href="#18-11">西遊記</a></li>
+        <li><a href="#18-12">花仙子</a></li>
+        <li><a href="#18-13">哪吒</a></li>
+        <li><a href="#18-14">寶蓮燈</a></li>
+        <li><a href="#18-15">變形金剛</a></li>
+        <li><a href="#18-16">名偵探柯南</a></li>
+        <li><a href="#18-17">大頭兒子和小頭爸爸</a></li>
+        <li><a href="#18-18">天線寶寶</a></li>
+        <li><a href="#18-19">巴拉巴拉小魔仙</a></li>
+        <li><a href="#18-20">熊出沒</a></li>
+        <li><a href="#18-21">獅子王</a></li>
+        <li><a href="#18-22">冰河世紀</a></li>
+      </ul>
+    </div>
+
   </div>
   <img src="https://trello-attachments.s3.amazonaws.com/5c98a0649bf7378f6c92a1cc/5dbfb035bbffbb850e000243/6fe722e2d1b4cfb795832c6c4f58fde6/%E5%9C%96%E7%89%87.png">
   <section id="18-01">
@@ -193,12 +200,40 @@
   <p style="text-align: right;">傳達日期：2015年6月8日</p>
 </article>
 <style>
-  html {
-    scroll-behavior: smooth;
-  }
-  .navbar {
-    position: fixed;
-    background-color: #f4f5f6;
-    right: 0;
-  }
+html {
+  scroll-behavior: smooth;
+}
+.navbar {
+  position: fixed;
+  background-color: #f1f1f0;
+  right: 0;
+  border-radius: 7px;
+  max-width: 100%;
+  max-height: 100%;
+}
+.navlist {
+  display: block;
+}
+.navbar > header > h2 {
+  padding-left: 20px;
+}
+#menu-ctrl {
+  position: fixed;
+  right: 0;
+  top: 20px;
+  font-size: 1.5em;
+}
+.navlist > h2 {
+  padding-left: 20px;
+}
+.navlist > ul {
+  overflow: scroll;
+}
 </style>
+<script>
+var menuCtrl = document.getElementById("menu-ctrl");
+var navlist = document.getElementsByClassName("navlist");
+function collapsible() {
+  return;
+}
+</script>
